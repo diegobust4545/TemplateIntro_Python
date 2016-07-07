@@ -1,2 +1,2 @@
-# TemplateIntro_Python
-Python web app written to learn how to write a server file, passing variables from Python to HTML, Python Dictionaries, Jinja logic and how everything ties together
+# TemplateIntro
+My First Web App written in Python to understand how to write a server file, obtain post request, Python dictionaries and passing variables from Python to HTML

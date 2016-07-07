@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1> Register For Email</h1>
+<h2>Current Memebers</h2>
+<table>
+  {% for names in name %}
+  <tr>
+    <td> {{names[0]}}</td><td> {{names[1]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<form method = "POST" action="/register">
+<table>
+  <p><br></p>
+  <tr> 
+    <td>First Name</td> <td> <input type="text" name="first"/></td>
+  </tr>
+  <tr> 
+    <td>Last Name</td> <td> <input type="text" name="last"/></td>
+  </tr>
+  <tr>
+    <td>age</td><td><input type="number" name="age"/></td>
+  </tr>
+  <tr>
+    <td>email</td> <td> <input type="email" name="email"/></td>
+  </tr>
+</table>
+<input type="Submit" value = "Register"/>
+</form>
+{% endblock %}

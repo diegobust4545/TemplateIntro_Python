@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1> Here I am testing out the extensions of the buttons.</h1>
+        
+        <p>Enjoy my photos.</p>
+        
+        <img src="static/images/Camping.jpg" alt="HTML5 Icon" width ="768";height="432";>
+        <img src="static/images/Worship.jpg" alt="HTML5 Icon" width ="768";height="432";>
+        <img src="static/images/KelsoBW.JPG" alt="HTML5 Icon" width ="768";height="432";>
+        <img src="static/images/DepthOfField.JPG" alt="HTML5 Icon" width="768";height="432";>
+        <img src="static/images/LauraAndGabeSkyBay.jpg" alt="HTML5 Icon" width="768";height="432";>
+        <img src="static/images/DSC_0351.jpg" alt="HTML5 Icon" width="768" height="432";>
+        <img src="static/images/SmithFieldCarBruh.jpg" alt="HTML5 Icon" width="768" height="432";>
+        <img src="static/images/DSC_0362.jpg" alt="HTML5 Icon" width="768" height="432";>
+        {% if photoMonday %}
+        <p>Here is a special photo to make your monday better!</p>
+        <img src="static/images/DSC_0006.jpg" alt="HTML5 Icon" width="768" height="432";>
+        {% endif %}
+        
+{% endblock %}

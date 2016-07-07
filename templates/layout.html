@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Diego's Photography Bucket</title>
+  <meta name="Diego Bustamante" content="Random Photos taken by yours truly" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <!-- stylesheets -->
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/colour.css" rel="stylesheet" type="text/css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="static/js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- begin header -->
+    <header>
+      <div id="logo"><h1>DIEGO'S<a href="#">PHOTO</a>Bucket</h1></div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="/home">home</a></li>
+          <li><a href="aboutMe">about me</a></li>
+          <li><a href="photos">photos</a></li>
+          <li><a href="contact">contact</a></li>
+          <li><a href="register">register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- begin content -->
+    
+    
+    <div>
+      {% block content %} {% endblock %}
+      </div>
+    <!-- end content -->
+
+    <!-- begin footer -->
+    <footer>
+      <p>Copyright &copy; All Rights Reserved. <a href="http://www.css3templates.co.uk"></a></p>
+      <p><img src="static/images/twitter.png" alt="twitter" />&nbsp;<img src="static/images/facebook.png" alt="facebook" />&nbsp;<img src="static/images/rss.png" alt="rss" /></p>
+    </footer>
+    <!-- end footer -->
+
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="static/js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="static/js/image_fade.js"></script>
+  <!-- initialise sooperfish menu -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

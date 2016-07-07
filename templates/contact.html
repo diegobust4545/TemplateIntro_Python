@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1> Social Media</h1>
+<p>
+Instagram: {{contact.insta}}<br>
+Cell: {{contact.cell}}<br>
+Email: {{contact.email}} </p>
+        
+    
+<h1>Recommended YouTube Videos</h1>
+{% for post in posts %}
+<h2>{{post.title}}</h2>
+<iframe width="620" height="480" src="https://youtube.com/embed/{{post.vidLink}}"></iframe>
+<p>{{post.description}}</p>
+{% endfor %}
+    
+{% endblock %}
